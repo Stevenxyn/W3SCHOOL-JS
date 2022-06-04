@@ -8,6 +8,7 @@
     <!--Boostrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Javascript/style.css">
 
     <title>Aprendiendo JSS</title>
 </head>
@@ -37,13 +38,13 @@
         bombillo</button>
 
     <button type="button" class="btn btn-dark btn-lg btn-block "
-    onclick='document.getElementById("mi-bombillo").style.display="none"'  >
+        onclick='document.getElementById("mi-bombillo").style.display="none"'>
 
         eliminar bombillo
     </button>
 
     <button type="button" class="btn btn-dark btn-lg btn-block "
-    onclick='document.getElementById("mi-bombillo").style.display="initial"'  >
+        onclick='document.getElementById("mi-bombillo").style.display="initial"'>
 
         Mostrar bombillo
     </button>
@@ -51,20 +52,73 @@
 
     <hr>
 
-<h3 id="color">spencer</h3>
+    <h3 id="color">spencer</h3>
 
-<button type="button" class="btn btn-warning"
-onclick='document.getElementById("color").style.color="yellow"'
->Amarillo</button>
+    <button type="button" class="btn btn-warning"
+        onclick='document.getElementById("color").style.color="yellow"'>Amarillo</button>
 
-<button type="button" class="btn btn-info"
-onclick='document.getElementById("color").style.color="blue"'
->Azul</button>
+    <button type="button" class="btn btn-info"
+        onclick='document.getElementById("color").style.color="blue"'>Azul</button>
 
-<button type="button" class="btn btn-danger"
-onclick='document.getElementById("color").style.color="red"'
+    <button type="button" class="btn btn-danger"
+        onclick='document.getElementById("color").style.color="red"'>Rojo</button>
 
->Rojo</button>
+
+    <button type="button" class=" btn btn-primary" onclick="window.print()">
+        Esta expresion imprime el contenido de la ventana actual
+    </button>
+
+    <hr>
+
+
+    <div class="nav navbar navbar-dark bg-dark navbar-expand-xl mr-auto">
+        <li class="nav-item"><a href="#declaracionesJS" class="nav-link text-white">Declaraciones JS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+    </div>
+
+    <div class="container mt-5">
+        <section id="declaracionesJS">
+            <h2>Declaraciones JS</h2>
+            <p>La mayoría de los programas de JavaScript contienen muchas declaraciones de JavaScript. Las declaraciones se ejecutan, una por una, en el mismo orden en que se escriben.</p>
+
+            <script>
+                let x, y, z;
+                x = 5;
+                y = 6;
+                z = x + y;
+                document.write(`Lo anterior son sentencias ${z} `);
+                document.write(' Un programa en JS es una lista de sentancias de programacion');
+            </script>
+
+            <p>Trayendo codigo desde un archivo aparte saludame sea bienvenido <span id="mostrarNombre"></span><p>
+          <button type="button" onclick="saludar()">Dale aqui</button>
+
+          <p id="demo"></p>
+
+          <script>
+              let nombre = 'mercy';
+              document.getElementById('demo').innerHTML = nombre;
+          </script>
+
+          
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
 
 
 
@@ -93,6 +147,7 @@ onclick='document.getElementById("color").style.color="red"'
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+        <script src="/Javascript/Fundamentos/index.js"></script>
 </body>
 
 </html>
