@@ -107,6 +107,31 @@
         </section>
 
 
+        <h2>Prueba evento agregando algo al oprimir el boton a lo que tenga el identificadod</h2>
+
+        <button type="button" onclick="document.getElementById('demostracion').innerHTML = Date()">
+            Oprime aqui!
+        </button>
+            <p id="demostracion"></p>
+
+        <h2>Prueba evento agregar contenido de su propio elemento</h2>
+        <button type="button" onclick='this.innerHTML = Date()'>
+            Oprime y cambia lo que hay ya escrito!
+        </button>
+
+        <h2>Ocupar funciones para llamar eventos y tener el codigo en html mas limpio</h2>
+
+        <button type="button" class="btn btn-danger" onclick="mostrarApodo()" id="verApodo">
+            Oprime aca y te mostrare tu apodo en los videojuegos
+        </button>
+
+        <h2>Cambiar el fondo de una caja en CSS con JS</h2>
+        <div class="probandoJS" id="bgJs" onmouseover="cambiarFondo()" onmouseout="fondoAnterior()">
+
+        </div>
+        
+
+
 
 
 
@@ -126,6 +151,7 @@
 
 
 
+        <script src="./Fundamentos/eventosJs.js"></script>
 
 
 
