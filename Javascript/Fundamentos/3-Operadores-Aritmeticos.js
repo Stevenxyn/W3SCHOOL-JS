@@ -1,5 +1,5 @@
 /*******************Operadores ARITMETICOS JS***********************************/
-
+//https://www.w3schools.com/js/js_operators.asp
 
 /*
 Operador        Ejemplo             Igual que

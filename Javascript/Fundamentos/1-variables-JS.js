@@ -10,7 +10,7 @@ console.log(apodo);
 console.log(name);
 */
 
-/*Las variables definidas con lettambién se elevan a la parte superior del bloque, pero no se inicializan.
+/*Las variables definidas con let también se elevan a la parte superior del bloque, pero no se inicializan.
 Significado: el uso de una letvariable antes de declararla dará como resultado ReferenceError:
 
 nombreCarro;
