@@ -53,18 +53,6 @@ console.log((10+5)*2); // 30
     /=            x /= y           x = x / y       Dividir         5 / 5
     %=            x %= y           x = x % y       Resto, residuo  5 % 5
     **=           x **= y          x = x ** y      Potencia        5 x 5 x 5 x 5 x 5 
-```
-### 3 - [Operadores Aritmeticos](https://www.w3schools.com/js/js_operators.asp) 
-
-```javascript
-# Operadores     #Ejemplo         #Es igual que  
-
-    +=            x += y           x = x + y       Sumar           5 + 5
-    -=            x -= y           x = x - y       Restar          5 - 5
-    *=            x *= y           x = x * y       Multiplicar     5 * 5
-    /=            x /= y           x = x / y       Dividir         5 / 5
-    %=            x %= y           x = x % y       Resto, residuo  5 % 5
-    **=           x **= y          x = x ** y      Potencia        5 x 5 x 5 x 5 x 5 
 
 # Operadores de comparación
 
