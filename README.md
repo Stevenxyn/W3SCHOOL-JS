@@ -54,7 +54,39 @@ console.log((10+5)*2); // 30
     %=            x %= y           x = x % y       Resto, residuo  5 % 5
     **=           x **= y          x = x ** y      Potencia        5 x 5 x 5 x 5 x 5 
 ```
+### 3 - [Operadores Aritmeticos](https://www.w3schools.com/js/js_operators.asp) 
 
+```javascript
+# Operadores     #Ejemplo         #Es igual que  
+
+    +=            x += y           x = x + y       Sumar           5 + 5
+    -=            x -= y           x = x - y       Restar          5 - 5
+    *=            x *= y           x = x * y       Multiplicar     5 * 5
+    /=            x /= y           x = x / y       Dividir         5 / 5
+    %=            x %= y           x = x % y       Resto, residuo  5 % 5
+    **=           x **= y          x = x ** y      Potencia        5 x 5 x 5 x 5 x 5 
+
+# Operadores de comparación
+
+    ==   Igual a
+    ===  Igual a con tipo de dato y valor "comparación mas estricta"
+    !=   No es igual al valor con el que se esta comparando lo opuesto
+    !=== La misma comparación anterior pero validando el tipo de dato
+    >    Mayor que
+    <    Menor que
+    >=   Mayor o igual que
+    <=   Menor o igual que
+    ?    Operador ternario
+
+# Operadores Logicos
+
+    && Evalúa varias comparaciones ((a && b) >= c)
+    || Este operador lógico compara dos expresiones. Si la primera se  
+       evalúa como "falsa", la sentencia devolverá el valor de la segunda  
+       expresión. Si la primera se evalúa como "verdadera", la sentencia 
+       devolverá el valor de la primera expresión.
+    ! Convierte true en false y false en true si lo ocupamos, si no es convertible
+      a gi
 
 
 
