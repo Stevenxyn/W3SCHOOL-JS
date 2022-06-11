@@ -123,3 +123,9 @@ let cadenaEspacios = "            metallica!!        ";
 console.log(cadenaEspacios);
 console.log(cadenaEspacios.trim());// Quita los espacios :D
 
+//indexOf() Trae el indice de la cadena que la pasemos
+let indexOfPrueba = "Carlos Steven Lopez Montanio"
+console.log(indexOfPrueba.indexOf("Lopez"));// empieza desde 0
+
+
+

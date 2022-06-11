@@ -32,7 +32,7 @@
     <button type="button" onclick='document.getElementById("mi-bombillo").src="../img/bombilloEncendido.gif"'>Prender el
         bombillo</button>
 
-    <img src="../img/bombilloApagado.gif" id="mi-bombillo">
+    <img src="/img/bombilloApagado.gif" id="mi-bombillo">
 
     <button type="button" onclick='document.getElementById("mi-bombillo").src=("../img/bombilloApagado.gif")'>Apagar el
         bombillo</button>
@@ -129,17 +129,25 @@
         <div class="probandoJS" id="bgJs" onmouseover="cambiarFondo()" onmouseout="fondoAnterior()">
 
         </div>
-        
 
+        <h2 class="mt-5">Incrustando JS en htmls</h2>
+        <p id="mostrarDatoss"></p>
 
+        <script>
+            let cabezeraBandas = "Mis bandas Favoritas !!";
+            let matrizBandas = ["Metallica", "Cigarette After Sex", "Rammstein", "Megadeath"];
 
+            let html = `<h3>${cabezeraBandas}</h3><ul>`;
 
-
-
-
-
-
-
+                for (const x of matrizBandas) {
+                    html += `<li>${x}</li>`;
+                }
+                html += `</ul>`;
+                document.write(`Prueba: ${ r = (5/(5+1)).toFixed(2)} toFixed nos trae los decimales y elegimos hasta cuantos`)//
+                document.getElementById("mostrarDatoss").innerHTML = html;
+        </script>
+       
+9696
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
@@ -151,8 +159,7 @@
 
 
 
-        <script src="./Fundamentos/eventosJs.js"></script>
-
+    <script src="./Fundamentos/eventosJs.js"></script>
 
 
 
@@ -173,7 +180,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
-        <script src="/Javascript/Fundamentos/index.js"></script>
 </body>
 
 </html>
