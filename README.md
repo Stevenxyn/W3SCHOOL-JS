@@ -74,7 +74,7 @@ console.log((10+5)*2); // 30
        expresión. Si la primera se evalúa como "verdadera", la sentencia 
        devolverá el valor de la primera expresión.
     ! Convierte true en false y false en true si lo ocupamos, si no es convertible
-      a gi
+      a booleano retorna true 
 
 
 
