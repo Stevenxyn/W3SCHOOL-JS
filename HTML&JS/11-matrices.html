@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Javascript/style.css">
+    <title>Matrices JS</title>
+</head>
+
+<body>
+    <style>
+        h2 {
+            margin: 5px 0px 5px;
+        }
+    </style>
+
+
+    <div class="container">
+
+        <h1 class="mt-5"><a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank"
+                rel="noopener noreferrer">Ver mas de matrices </a></h1>
+
+        <p>Una matriz es una variable especial, que puede contener más de un valor:</p>
+        <p id="misAutosMostrar"></p>
+        <script>
+            const misAutos = ["Audi", "Porsche", "Mercedes Benz"];
+            document.getElementById("misAutosMostrar").innerHTML = misAutos;
+        </script>
+
+        <h2>Recorriendo un array de bandas de rock, y pintandolas a travez de una lista en HTML</h2>
+        <p id="mostrarDatos"></p>
+        <script>
+            const bandas = ["Metallica", " Cigarette After Sex", " Rammstein", " Megadeath"];
+
+            let pintarTexto = "<ul>";
+            for (let i = 0; i < bandas.length; i++) {
+                pintarTexto += "<li>" + bandas[i] + "</li>"
+            }
+            pintarTexto += "</ul>";
+            document.getElementById("mostrarDatos").innerHTML = pintarTexto;
+        </script>
+
+        <h2>Acceder a elementos de la matriz</h2>
+        <p>Accede a un elemento en particular haciendo referencia a el numero del indice donde se encuentra</p>
+        <p id="accediendoMatriz"></p>
+        <script>
+            let primeraBanda = bandas[0];
+            let segundaBanda = bandas[1];
+            let terceraBanda = bandas[3];
+            document.getElementById("accediendoMatriz").innerHTML = `${primeraBanda}, ${segundaBanda}, ${terceraBanda} `;
+        </script>
+
+        <h2>Cambiar un elemento de la matriz</h2>
+        <p>esta declaracion cambia el valor del elemento que le asignemos</p>
+        <script>
+            const cambiandoValorMatriz = [1, 2, 3];
+            document.write(cambiandoValorMatriz + "</br>");
+            cambiandoValorMatriz[0] = "Mercy";
+            document.write(cambiandoValorMatriz);
+        </script>
+
+        <h2>Acceder a la matriz completa</h2>
+        <p id="mostrarMatrizCompleta"></p>
+        <script>
+            document.getElementById("mostrarMatrizCompleta").innerHTML = bandas;
+        </script>
+
+        <h2>Las matrices son objetos</h2>
+        <p>Las matrices son un tipo <span class="text-primary">object</span> el <span class="text-primary">
+                typeof</span>
+            operador en JS devuelve <span class="text-primary">objeto</span> para matrices</p>
+        <p>pero las matrices en JS se describen de mejor manera como matrices y no como objetos, las matrices usan
+            numeros para Acceder
+            a sus elementos y los objetos usan nombres para acceder a sus "miembros"</p>
+
+        <h6>Accediendo a matrices desde el posicionamiento</h6>
+        <script>
+            document.write(bandas[0] + "</br>" + bandas[1])            
+        </script>
+        <h6>Accediendo a objetos desde nombre de los elementos</h6>
+        <script>
+            const miGato = {
+                nombre: "Spencer",
+                edad: 2,
+                sexo: "Macho",
+                color: "Amarillo con blanco"
+            }
+            document.write(`Mi gato tiene:  ${miGato.edad} Años </br>
+            El nombre es: ${miGato.nombre}`)
+        </script>
+
+        <h2>Los elementos de matriz pueden ser objetos</h2>
+        <p>Las variables de JavaScript pueden ser objetos. Las matrices son tipos especiales de objetos.</p>
+        <p>Debido a esto, puedes tener variables de diferentes tipos en el mismo Array.</p>
+        <p> Puedes tener objetos en un Array. Puedes tener funciones en un Array. Puedes tener arreglos en un Array:</p>
+
+        <script>
+            const matrisObjeto = [Date.now(), myFunction(), bandas];
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</body>
+
+</html>
