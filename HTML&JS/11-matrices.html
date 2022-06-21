@@ -98,12 +98,70 @@
         <p>Las variables de JavaScript pueden ser objetos. Las matrices son tipos especiales de objetos.</p>
         <p>Debido a esto, puedes tener variables de diferentes tipos en el mismo Array.</p>
         <p> Puedes tener objetos en un Array. Puedes tener funciones en un Array. Puedes tener arreglos en un Array:</p>
+        <p id="mostrarListadoBandas"></p>
 
         <script>
-            const matrisObjeto = [Date.now(), myFunction(), bandas];
-
+            console.log(bandas)
+            const result = bandas.forEach((valor, indice) => {
+                document.write(valor + " " + indice);
+            });
         </script>
 
+        <h2>Obtener la longitud de un array</h2>
+        <p>Asi sacamos la longitud de un array y lo guardamos dentro de una nueva variable para reutilizarlo mas
+            adelante REVISAR CODIGO</p>
+
+        <script>
+            const numerosFachas = ["casa1", "Casa2", "casa3", "casa3"];
+            let longitudArray = numerosFachas.length;
+            document.write("Esta es la longitud del array: " + longitudArray)
+        </script>
+
+        <h2>Acceder al primer elemento de un array <span class="text-danger">ejemplo[1]</span></h2>
+        <h2></h2>
+        <script>
+            document.write("Ocuparemos el array de bandas" + "<br>");
+            let elementoTres = bandas[2];
+            document.write(bandas + "<br>")
+            document.write(elementoTres)
+            //Elegir ultima banda recordar debemos de sacar la longitud del arreglo con length y -1 para que nos dirija al ultimo elemento del arreglo
+            document.write("<h2>Acceder al ultimo</h2>")
+            let ultimaBanda = bandas[bandas.length - 1];
+            document.write(ultimaBanda)
+        </script>
+
+        <h2>Ejemplo recorriendo el array con for</h2>
+
+        <script>
+            let contador = bandas.length;
+
+            for (let i = 0; i < contador; i++) {
+                document.write("<br><br>")
+                document.write("Aca traemos el elemento recorrido del array: " + bandas[i] + "\n");
+                document.write("Aca solo traemos la posicion del elemento: " + i + "\n");
+            }
+        </script>
+
+        <h2>Recorrido del array con forEach</h2>
+
+        <script>
+            let recorridoConForEach = bandas.forEach((valor, indice) => {
+                document.write(`La banda ${valor} tiene de posicion ${indice}` + "<br>")
+            })
+        </script>
+
+
+        <h2>Agregar elemento al array <span class="text-danger">array.push("Elemento")</span></h2>
+
+        <script>
+            document.write(bandas + "<br>")
+            bandas.push(" Infinite Stream")
+            document.write(bandas + "<br>")
+
+            document.write(typeof bandas)
+     // El instanceofoperador devuelve verdadero si un objeto es creado por un constructor  dado: osea Array le decimos, bandas es un array y nos dice si pero tambien es un objeto pero no un string o un numero
+            document.write(bandas instanceof Array)
+        </script>
 
 
 
