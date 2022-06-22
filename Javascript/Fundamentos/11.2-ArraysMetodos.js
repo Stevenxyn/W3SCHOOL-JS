@@ -92,3 +92,4 @@ console.log(masAlto);
 let menorValor = numeros[0];
 console.log(menorValor);
 
+
