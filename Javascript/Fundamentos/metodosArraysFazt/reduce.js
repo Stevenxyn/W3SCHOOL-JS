@@ -42,47 +42,47 @@ const heroes = [
         precio: 28000
     }]
 
-    //Sumar todos los precios de los heroes forma noob
+//Sumar todos los precios de los heroes forma noob
 
-    // let totalPrecios = 0;
-    // for (let i = 0; i < heroes.length; i++) {
-    //     totalPrecios += heroes[i].precio
-    // }
-    // console.log(totalPrecios);
+// let totalPrecios = 0;
+// for (let i = 0; i < heroes.length; i++) {
+//     totalPrecios += heroes[i].precio
+// }
+// console.log(totalPrecios);
 
-    //forma semi pro 
+//forma semi pro 
 
-    // const resultadoTotal = heroes.reduce(function (totalPrecio,heroe) {
-    //     return totalPrecio + heroe.precio
-    // },0)// indicamos que totalPrecio Inicie en 0 en cada iteracion
-    // console.log(resultadoTotal);
-
-
-    // Forma pro papi como un senior que monda de semi pro ni que nada 
-
-    const sumaTotalPrecios = heroes.reduce((total, heroe)=> total + heroe.precio ,0)
-    console.log(sumaTotalPrecios);
+const resultadoTotal = heroes.reduce(function (totalPrecio, heroe) {
+    return totalPrecio + heroe.precio
+}, 0)// indicamos que totalPrecio Inicie en 0 en cada iteracion
+console.log(resultadoTotal);
 
 
-    const desarrolladores = [
-        {
-            id:1,
-            nombre:"Lopez",
-            habilidades: ["HTML", "JS", "CSS", "React"]
-        },
-        {
-            id:2,
-            nombre:"Lorena",
-            habilidades: ["HTML", "JS", "CSS", "React", "Angular"]
-        },  {
-            id:3,
-            nombre:"Juan",
-            habilidades: ["HTML", "JS", "CSS", "React", "Angular"]
-        }
-    ]
+// Forma pro papi como un senior que monda de semi pro ni que nada 
 
-    const resultado = desarrolladores.reduce (function (todasHabilidades, desarrollador) {
-        return Array.from(new Set([...todasHabilidades, ...desarrollador.habilidades ]))
-    }, [ ])
+const sumaTotalPrecios = heroes.reduce((total, heroe) => total + heroe.precio, 0)
+console.log(sumaTotalPrecios);
 
-    console.log(resultado);
+
+const desarrolladores = [
+    {
+        id: 1,
+        nombre: "Lopez",
+        habilidades: ["HTML", "JS", "CSS", "React"]
+    },
+    {
+        id: 2,
+        nombre: "Lorena",
+        habilidades: ["HTML", "JS", "CSS", "React", "Angular"]
+    }, {
+        id: 3,
+        nombre: "Juan",
+        habilidades: ["HTML", "JS", "CSS", "React", "Angular"]
+    }
+]
+
+const resultado = desarrolladores.reduce(function (todasHabilidades, desarrollador) {
+    return Array.from(new Set([...todasHabilidades, ...desarrollador.habilidades]))
+}, [])
+
+console.log(resultado);

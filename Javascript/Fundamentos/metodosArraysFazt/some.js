@@ -41,23 +41,17 @@ const heroes = [
         tipoDanio: "Fisico",
         precio: 28000
     }]
+    
 
-    //Ordenar elementos > de mayor a menor < de menor a mayor
+    //Este metodo evalua si existe un valor que le indiquemos, nos devuelve unicamente valores Booleanos :)
+ const EvaluacionDePrecio =   heroes.some(function (heroe) {
+        if (heroe.precio > 50000) {
+                return true
+        }
+    })
+   // console.log(EvaluacionDePrecio);
 
-//    const ordenandoHeroes = heroes.sort(function (primero,segundo){
-//         if (primero.precio < segundo.precio) {
-//             return 1
-//         }else{
-//             return -1
-//         }
-//     })
-//     console.log(ordenandoHeroes);
 
-    //Ordenando mejor  > de mayor a menor < de menor a mayor
-
-    const resultado = heroes.sort ((p,s) =>p.precio < s.precio ? 1 : -1 );
-    //cambiamos los parametros p s A s p
-    const resultadoSinCondiciones = heroes.sort ((p,s) =>s.precio - p.precio );
-
-    //console.log(resultado);
-    console.log(resultadoSinCondiciones);
+   //Validamos si existe algun heroe que se llame Fanny si existe retroana true si no retorna false.
+   const ExisteONo = heroes.some(heroes => heroes.name == 'Fanny' ?true : false  )
+   console.log(ExisteONo);

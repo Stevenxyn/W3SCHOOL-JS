@@ -56,14 +56,12 @@ const heroes = [
 
     //forma semi pro // si se usa filter pero no usamos condiciones retorna vacio
 
-    // const result = heroes.filter(function (heroe) {
-    //     if (heroe.precio <  20000) {
-    //         return true
-    //     }
-    // })
+     const result = heroes.filter(function (heroe) {
+        return heroe.name === 'Fanny'
+    })
 
-    // console.log(result);
+    console.log(result);
 
     //Forma senior pro master // traiga diferentes a Mago
-    const resultado = heroes.filter (heroe => heroe.rol != 'Mago');
-    console.log(resultado);
+    // const resultado = heroes.filter (heroe => heroe.rol != 'Mago');
+    // console.log(resultado);

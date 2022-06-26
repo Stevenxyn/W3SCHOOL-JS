@@ -42,22 +42,19 @@ const heroes = [
         precio: 28000
     }]
 
-    //Ordenar elementos > de mayor a menor < de menor a mayor
+    //permite buscar un elemento dentro de un arreglo el primero que encuentr
 
-//    const ordenandoHeroes = heroes.sort(function (primero,segundo){
-//         if (primero.precio < segundo.precio) {
+//   const resultado =  heroes.find(function (heroes) {
+//         if(heroes.name == 'Fanny'){
 //             return 1
-//         }else{
-//             return -1
 //         }
 //     })
-//     console.log(ordenandoHeroes);
 
-    //Ordenando mejor  > de mayor a menor < de menor a mayor
+//     console.log(resultado);
 
-    const resultado = heroes.sort ((p,s) =>p.precio < s.precio ? 1 : -1 );
-    //cambiamos los parametros p s A s p
-    const resultadoSinCondiciones = heroes.sort ((p,s) =>s.precio - p.precio );
 
-    //console.log(resultado);
-    console.log(resultadoSinCondiciones);
+//con funciones flecha revuelve el primer elemento que encuente y si no encuentra nada
+    //Devuelve undefined
+const resultado = heroes.find(heroe => heroe.precio < 20000 )
+
+console.log(resultado.name);
