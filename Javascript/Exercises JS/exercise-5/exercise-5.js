@@ -5,5 +5,5 @@ var celcius = parseInt(prompt("Ingrese temperatura en Celcius:"));
 
 //Con ayuda de buscar la formula de convercion de C a F la apropiamos en una funcion flecha
 
-const gFahrenheit = () =>{ fahrenheit = (celcius * 9/5) + 32; alert(fahrenheit);}
+const gFahrenheit = () => { fahrenheit = (celcius * 9 / 5) + 32; alert(fahrenheit); }
 gFahrenheit();
