@@ -1,6 +1,6 @@
 //Evaluar una variable si el numero ingresado es mayor o menor, y evaluar si el dato que se ingresa es un numero o no
 
-var edad = "11";
+var edad = "18";
 
 function averiguarEdad() {
     if (isNaN(edad)) {
