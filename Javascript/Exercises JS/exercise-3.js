@@ -32,14 +32,14 @@ const heroes = [
         rol: "Adc",
         tipoDanio: "Hibrido",
         precio: 42000,
-        edad: 20
+        edad: 12
     },
     {
         name: "Khufra",
         rol: "Tanque",
         tipoDanio: "Fisico",
         precio: 30000,
-        edad: 20
+        edad: 12
     },
     {
         name: "Akai",
@@ -52,9 +52,12 @@ const heroes = [
 //Esta funcion me trae el heroe con la edad que le diga y me recorre 
 
 const r = heroes.filter(function (heroe) {
-    return heroe.edad > 19
+    return heroe.edad < 19
 }).map(function (heroe) {
     return `El heroe ${heroe.name.toUpperCase()} cuenta con una edad de ${heroe.edad} y su rol es ${heroe.rol.toUpperCase()}`
 })
 
 console.log(r);
+
+
+Carloslol_123?

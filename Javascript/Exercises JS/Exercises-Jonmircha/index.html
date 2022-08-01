@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con JhonMircha</title>
+</head>
+
+<body>
+    <p> 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.</p>
+
+    <p>2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".</p>
+
+    <p> 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</p>
+
+    <p> 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.</p>
+
+    <script>
+        function cantidadCaracteres(texto) {
+            let r = texto.length;
+            console.log("Tu texto tiene: " + r + " Caracteres")
+        }        
+        cantidadCaracteres("Hola Mundo")
+
+
+        
+        function recortarTexto(texto,recortado){
+            let r = texto.slice(0,recortado);
+            console.log(r)
+        }
+        recortarTexto("Hola mundo",4)
+
+
+
+
+    </script>
+</body>
+
+</html>
