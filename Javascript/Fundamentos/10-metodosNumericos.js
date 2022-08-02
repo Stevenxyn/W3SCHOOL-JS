@@ -27,7 +27,7 @@ x.toPrecision(6);
 */
 //Ocupando Number()
 console.log(typeof Number(true));
-console.log(typeof Number(false));
+console.log(typeof Nu.mber(false));
 console.log(typeof Number("42"));
 console.log(typeof Number("         10        "));
 console.log( Number("10.22"));
