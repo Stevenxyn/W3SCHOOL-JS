@@ -17,5 +17,5 @@ function sumMix(...masParametros) {
     console.log(sumaTotal)
     console.log(typeof(sumaTotal));
 }
-sumMix("4",5,"12",1,50,"10","5","100")
+sumMix("4",5,"12",1,50,"10","5","100",-100,"1.5")
 
