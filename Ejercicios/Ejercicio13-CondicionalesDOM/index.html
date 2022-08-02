@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+<h1>Registro</h1>
+
+<form >
+    <label >Crea usuario: </label><input id="crearUsuario"type="text" required>
+    <label >Crea clave: </label><input id="crearClave" type="password" required>
+    <button id="btnCreaUsuario" type="button">Crear Usuario</button>
+</form>
+
+<hr>
+<form >
+    <h2>Validando usuario coincidencias</h2>
+    <label >Usuario: </label><input id="validarUsuario"type="text">
+    <label >Clave: </label><input id="validarClave" type="password">
+    <button id="btnValidarUsuario" type="button">Validar coincidencias</button>
+</form>
+<hr>
+
+<form >
+    <h2>Modificando Registro</h2>
+    <label >Usuario: </label><input id="usuarioModificado"type="text">
+    <label >Clave: </label><input id="claveModificado" type="password">
+    <button id="btnModificar" type="button">Modificar</button>
+</form>
+
+<p id="usuarioMostrar"></p>
+<p id="claveMostrar"></p>
+
+<script src="./main.js"></script>
+</body>
+
+</html>
