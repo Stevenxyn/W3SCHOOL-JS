@@ -19,4 +19,5 @@ for(const elemento of nombre){
 const carros = ["Audi", "BMW", "Porsche"];
 for(const e of carros){
     console.log(e);
+    console.log(carros.length);
 }
