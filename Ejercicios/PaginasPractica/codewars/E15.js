@@ -9,7 +9,7 @@ If your language supports it, try using a switch statement.
 
 
 
-
+a mi manera
 function decirNumero(n) {
     if(n == 0){console.log("Zero");}
     else if (n == 1){console.log("One");}
@@ -26,8 +26,15 @@ function decirNumero(n) {
 }
 decirNumero(2)
 
-*/
 
+otro ejemplo 
+function switchItUp(n){
+    console.log( ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][n]);
+  }
+  switchItUp(6)
+
+
+*/
 var entrada = 3;
 
 switch (entrada) {
@@ -67,3 +74,5 @@ switch (entrada) {
     default:
         console.log("Ingrese un dato");
 }
+
+
